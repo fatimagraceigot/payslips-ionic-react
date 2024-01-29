@@ -1,7 +1,7 @@
 import { IonApp, IonRouterOutlet, setupIonicReact } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import { Redirect, Route } from "react-router-dom";
-import ViewMessage from "./pages/PayslipDetails";
+import PayslipDetails from "./pages/PayslipDetails";
 import Payslips from "./pages/PayslipList";
 
 /* Core CSS required for Ionic components to work properly */
@@ -36,7 +36,7 @@ const App: React.FC = () => (
           <Payslips />
         </Route>
         <Route path="/payslip/:id">
-          <ViewMessage />
+          <PayslipDetails />
         </Route>
       </IonRouterOutlet>
     </IonReactRouter>

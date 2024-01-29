@@ -16,10 +16,6 @@ import AppHeader from "../components/AppHeader";
 import { Payslip, getPayslip } from "../data/payslip";
 import "./PayslipDetails.css";
 
-const getPayslipFormatDate = (date: Date) => {
-  return format(date, "MMMM do, yyyy");
-};
-
 const PayslipDetails: React.FC = () => {
   const [payslip, setPayslip] = useState<Payslip>();
   const params = useParams<{ id: string }>();
@@ -28,6 +24,10 @@ const PayslipDetails: React.FC = () => {
     const payslip = getPayslip(parseInt(params.id));
     setPayslip(payslip);
   });
+
+  const getPayslipFormatDate = (date: Date) => {
+    return format(date, "MMMM do, yyyy");
+  };
 
   const downloadPayslip = async (file: string) => {
     const assetFile = "assets/" + file;

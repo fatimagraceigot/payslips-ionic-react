@@ -30,17 +30,6 @@ const Payslips: React.FC = () => {
           </>
         }
       ></AppContent>
-      {/* <IonContent>
-        <section className="main-content">
-          <section className="content">
-            <IonList>
-              {payslips.map((p) => (
-                <PayslipListItem key={p.id} payslip={p} />
-              ))}
-            </IonList>
-          </section>
-        </section>
-      </IonContent> */}
     </IonPage>
   );
 };
