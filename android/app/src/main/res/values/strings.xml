@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">payslips-react</string>
+    <string name="title_activity_main">payslips-react</string>
+    <string name="package_name">com.fatima.payslips</string>
+    <string name="custom_url_scheme">com.fatima.payslips</string>
+</resources>

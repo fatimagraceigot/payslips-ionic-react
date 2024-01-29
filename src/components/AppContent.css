@@ -1,0 +1,25 @@
+ion-content {
+  --background: #f4f3f6;
+}
+
+.main-content {
+  display: grid;
+  padding: 24px;
+  grid-template-columns: 12fr;
+  grid-template-areas: "content";
+
+  @media (min-width: 480px) {
+    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-areas: ". content .";
+  }
+}
+
+.main-content > .content {
+  grid-area: content;
+}
+
+.main-content > .content > .content-area {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+}
