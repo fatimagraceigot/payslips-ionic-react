@@ -33,10 +33,14 @@ Note: Before running in iOS and Android, please make sure you have already setup
 1. Run the following command to open the application in iOS (Make sure you are running it in a MacOS)
 
 ```
+$ npx cap sync
 $ npx cap run ios (this will directly open the app in iOS Simulator)
+```
 
 or
 
+```
+$ npx cap sync
 $ npx cap open ios (this will open the project in Xcode, then run the app from there)
 
 ```
@@ -46,12 +50,14 @@ $ npx cap open ios (this will open the project in Xcode, then run the app from t
 1. Run the following command to open the application in Android (Make sure you are running it in a MacOS)
 
 ```
+$ npx cap sync
 $ npx cap run android (this will directly open the app in Android Emulator - please make sure you have already setup your Android Devices)
+```
 
 or
 
-$ npx cap open ios (this will open the project in Xcode, then run the app from there)
+```
+$ npx cap sync
+$ npx cap open android (this will open the project in Android Studio, then run the app from there)
 
 ```
-
-5. Deploy the app to an Android device
